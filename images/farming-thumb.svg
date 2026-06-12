@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 320">
+  <defs>
+    <linearGradient id="gsky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#040d04"/>
+      <stop offset="50%" stop-color="#0e2e0e"/>
+      <stop offset="100%" stop-color="#1a5414"/>
+    </linearGradient>
+    <linearGradient id="gground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2e7a18"/>
+      <stop offset="100%" stop-color="#0f3808"/>
+    </linearGradient>
+    <linearGradient id="gvign" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="25%" stop-color="transparent"/>
+      <stop offset="100%" stop-color="rgba(2,12,2,0.72)"/>
+    </linearGradient>
+    <radialGradient id="gsun" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffd060"/>
+      <stop offset="100%" stop-color="#d4900a" stop-opacity="0.5"/>
+    </radialGradient>
+    <radialGradient id="ghorizon" cx="50%" cy="0%" r="80%">
+      <stop offset="0%" stop-color="rgba(80,200,40,0.12)"/>
+      <stop offset="100%" stop-color="transparent"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Sky -->
+  <rect width="600" height="320" fill="url(#gsky)"/>
+
+  <!-- Stars / fireflies -->
+  <circle cx="55" cy="32" r="1.3" fill="white" opacity="0.5"/>
+  <circle cx="130" cy="15" r="0.9" fill="white" opacity="0.4"/>
+  <circle cx="210" cy="48" r="1.1" fill="white" opacity="0.55"/>
+  <circle cx="370" cy="25" r="0.9" fill="white" opacity="0.35"/>
+  <circle cx="460" cy="12" r="1.3" fill="white" opacity="0.5"/>
+  <circle cx="545" cy="40" r="0.8" fill="white" opacity="0.45"/>
+  <circle cx="580" cy="18" r="1.1" fill="white" opacity="0.6"/>
+
+  <!-- Moon / dim sun -->
+  <circle cx="300" cy="72" r="38" fill="url(#gsun)" opacity="0.22"/>
+  <circle cx="300" cy="72" r="24" fill="#ffd060" opacity="0.3"/>
+  <circle cx="300" cy="72" r="58" fill="none" stroke="rgba(200,230,100,0.1)" stroke-width="2"/>
+
+  <!-- Horizon glow -->
+  <ellipse cx="300" cy="190" rx="320" ry="60" fill="url(#ghorizon)"/>
+
+  <!-- Ground -->
+  <path d="M0,188 Q100,176 200,184 Q300,192 400,182 Q500,172 600,182 L600,320 L0,320 Z" fill="url(#gground)"/>
+
+  <!-- Dirt rows -->
+  <path d="M30,210 Q150,204 270,210 Q390,216 510,210 Q560,207 585,210" stroke="rgba(40,20,5,0.55)" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <path d="M30,228 Q150,222 270,228 Q390,234 510,228 Q560,225 585,228" stroke="rgba(40,20,5,0.45)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <path d="M30,245 Q150,239 270,245 Q390,251 510,245" stroke="rgba(40,20,5,0.35)" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <!-- Wheat / crop stalks row 1 -->
+  <g stroke-linecap="round">
+    <!-- Stalk cluster pattern repeated -->
+    <g fill="none">
+      <line x1="68" y1="210" x2="68" y2="184" stroke="#6ab832" stroke-width="2.2"/>
+      <path d="M68,184 Q68,176 63,172 Q68,178 73,172 Q68,176 68,184" fill="#6ab832" stroke="none"/>
+      <line x1="62" y1="193" x2="68" y2="186" stroke="#5da02a" stroke-width="1.5"/>
+      <line x1="74" y1="190" x2="68" y2="185" stroke="#5da02a" stroke-width="1.5"/>
+    </g>
+    <g fill="none">
+      <line x1="130" y1="207" x2="130" y2="181" stroke="#6ab832" stroke-width="2.2"/>
+      <path d="M130,181 Q130,173 125,169 Q130,175 135,169 Q130,173 130,181" fill="#6ab832" stroke="none"/>
+      <line x1="124" y1="190" x2="130" y2="183" stroke="#5da02a" stroke-width="1.5"/>
+      <line x1="136" y1="187" x2="130" y2="182" stroke="#5da02a" stroke-width="1.5"/>
+    </g>
+    <g fill="none">
+      <line x1="192" y1="210" x2="192" y2="184" stroke="#6ab832" stroke-width="2.2"/>
+      <path d="M192,184 Q192,176 187,172 Q192,178 197,172 Q192,176 192,184" fill="#6ab832" stroke="none"/>
+    </g>
+    <g fill="none">
+      <line x1="254" y1="207" x2="254" y2="181" stroke="#72c438" stroke-width="2.2"/>
+      <path d="M254,181 Q254,173 249,169 Q254,175 259,169 Q254,173 254,181" fill="#72c438" stroke="none"/>
+      <line x1="248" y1="190" x2="254" y2="183" stroke="#60aa2e" stroke-width="1.5"/>
+    </g>
+    <g fill="none">
+      <line x1="316" y1="210" x2="316" y2="184" stroke="#6ab832" stroke-width="2.2"/>
+      <path d="M316,184 Q316,176 311,172 Q316,178 321,172 Q316,176 316,184" fill="#6ab832" stroke="none"/>
+      <line x1="322" y1="191" x2="316" y2="185" stroke="#5da02a" stroke-width="1.5"/>
+    </g>
+    <g fill="none">
+      <line x1="378" y1="207" x2="378" y2="181" stroke="#72c438" stroke-width="2.2"/>
+      <path d="M378,181 Q378,173 373,169 Q378,175 383,169 Q378,173 378,181" fill="#72c438" stroke="none"/>
+    </g>
+    <g fill="none">
+      <line x1="440" y1="210" x2="440" y2="184" stroke="#6ab832" stroke-width="2.2"/>
+      <path d="M440,184 Q440,176 435,172 Q440,178 445,172 Q440,176 440,184" fill="#6ab832" stroke="none"/>
+      <line x1="434" y1="193" x2="440" y2="186" stroke="#5da02a" stroke-width="1.5"/>
+      <line x1="446" y1="190" x2="440" y2="185" stroke="#5da02a" stroke-width="1.5"/>
+    </g>
+    <g fill="none">
+      <line x1="502" y1="207" x2="502" y2="181" stroke="#6ab832" stroke-width="2.2"/>
+      <path d="M502,181 Q502,173 497,169 Q502,175 507,169 Q502,173 502,181" fill="#6ab832" stroke="none"/>
+    </g>
+    <g fill="none">
+      <line x1="560" y1="210" x2="560" y2="184" stroke="#72c438" stroke-width="2.2"/>
+      <path d="M560,184 Q560,176 555,172 Q560,178 565,172 Q560,176 560,184" fill="#72c438" stroke="none"/>
+    </g>
+  </g>
+
+  <!-- Distant trees silhouette -->
+  <g opacity="0.4" fill="#0e3008">
+    <path d="M0,185 L10,155 L20,185 Z"/>
+    <path d="M15,185 L25,148 L35,185 Z"/>
+    <path d="M565,183 L575,153 L585,183 Z"/>
+    <path d="M580,183 L590,158 L600,183 Z"/>
+  </g>
+
+  <!-- Vignette -->
+  <rect width="600" height="320" fill="url(#gvign)"/>
+
+  <!-- Title -->
+  <text x="300" y="258" font-family="'Arial Black', 'Helvetica Neue', Arial, sans-serif" font-size="24" font-weight="900" fill="white" text-anchor="middle" letter-spacing="2.5" opacity="0.96">FARMING SIMULATOR</text>
+  <text x="300" y="281" font-family="'Courier New', Courier, monospace" font-size="12" fill="#80cc50" text-anchor="middle" letter-spacing="2" opacity="0.75">MT. TALAMAU · IMAGINATURE STUDIO</text>
+
+  <!-- IN DEV badge -->
+  <rect x="14" y="14" width="80" height="27" rx="13.5" fill="rgba(210,153,34,0.18)" stroke="rgba(210,153,34,0.5)" stroke-width="1"/>
+  <text x="54" y="32" font-family="Arial, sans-serif" font-size="11" font-weight="700" fill="#d29922" text-anchor="middle" letter-spacing="0.5">IN DEV</text>
+</svg>
